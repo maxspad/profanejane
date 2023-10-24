@@ -1,49 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profane Jane</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profane Jane</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+        
+        .navbar {
+            /* background-color: #efd4d9; */
+            background-color: #997c81;
+        }
+        .card-link {
+            color: #997c81; /* pink stone color used as accent */
+        }
 
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"> <!-- Include CSS file -->
-  
-  <style>
-     /* You can add your CSS rules here */
-  </style>
+        .navbar {
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .navbar-brand {
+            color: white;
+        }
+        
+        .nav-link {
+            color: white;
+        }
+
+        .card {
+            margin: 20px; 
+            /* margin-left: 10px; */
+            /* margin-right: 10px; */
+        }
+
+        .navbar-toggler {
+            border-color: white;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <a href="#"><img src="logo.jpg" alt="Logo" id="logo"></a>
-    <h1>Profane Jane</h1>
-    <nav>
-      <a href="#">Home</a> | 
-      <a href="#">About</a> |
-      <a href="#">Contact</a>
+    <nav class="navbar navbar-dark navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="logo.jpg" style="width: 50px; padding-right: 10px; border-radius: 50%;" />
+            Profane Jane
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Profane 💍" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
     </nav>
-    <h4 style="color: darkgray; font-style:italic">Profane <span style="font-size: larger">💍</span> for Profane <span style="font-size: larger">🙋‍♀️</span><sup style="font-size: 8pt">TM</sup></h4>
-  </header>
-  <section>
-    <article>
-      <h2>FU Necklace</h2>
-      <img src="image1.jpg" alt="F**k You Necklace" />
-      <p>F stands for "fun"</p>
-    </article>
-    <article>
-      <h2>Sad Necklace</h2>
-      <img src="image2.jpg" alt="Sad Necklace" />
-      <p>You're not happy, don't act like you are</p>
-    </article>
-    <article>
-      <h2>Middle Finger Pendant</h2>
-      <img src="image3.jpg" alt="Middle Finger Pendant" />
-      <p>Let them know how you really feel</p>
-    </article>
-    <!-- Add more products as needed -->
-  </section>
-  <footer>
-    <p>&copy; 2023 Profane Jane</p>
-  </footer>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="image1.jpg" alt="Jewelery 1">
+                <div class="card-body">
+                    <h4 class="card-title"><a class="card-link" href="#">FU Necklace</a></h4>
+                    <h6 class="card-subtitle mb-2 text-muted">$24.99</h6>
+                    <p class="card-text">Tell them what you really think</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="image2.jpg" alt="Jewelry 2">
+                <div class="card-body">
+                    <h4 class="card-title"><a class="card-link" href="#">Sad Pendant</a></h4>
+                    <h6 class="card-subtitle mb-2 text-muted">$35.99</h6>
+                    <p class="card-text">You're just so happy</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="image3.jpg" alt="Jewelry 2">
+                <div class="card-body">
+                    <h4 class="card-title"><a class="card-link" href="#">Middle Finger</a></h4>
+                    <h6 class="card-subtitle mb-2 text-muted">$55.99</h6>
+                    <p class="card-text">The universal greeting</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
